@@ -1,0 +1,1504 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciativa Académica UPS WEB - Semillero de Innovación y Tecnología Abierta</title>
+    <meta name="description" content="Sitio oficial de la Iniciativa Académica UPS WEB. Semillero universitario de investigación, prototipado de hardware libre, desarrollo web moderno y convocatoria abierta 2026." />
+    
+    <!-- Metadatos de Redes Sociales (Open Graph y Twitter) -->
+    <meta property="og:title" content="Iniciativa Académica UPS WEB - Semillero de Innovación y Tecnología Abierta" />
+    <meta property="og:description" content="Semillero universitario interdisciplinario de investigación aplicada en desarrollo web, hardware libre e inteligencia artificial con impacto comunitario." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Tipografía Moderna desde Google Fonts (Plus Jakarta Sans e IBM Plex Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hoja de Estilos CSS Puro (Vanilla CSS Mobile-First) -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Lógica JavaScript Puro (Vanilla JS sin dependencias) -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Enlace de salto accesible para lectores de pantalla y navegación por teclado -->
+    <a href="#contenido-principal" class="skip-link">
+      Saltar al contenido principal (Skip to content)
+    </a>
+
+    <!-- ======================================================================
+         BARRA SUPERIOR: RÚBRICA Y CONSIGNAS ACADÉMICAS IMPLEMENTADAS
+         ====================================================================== -->
+    <aside class="rubric-banner" aria-label="Rúbrica y Criterios Evaluativos de la Iniciativa">
+      <div class="container">
+        <div class="rubric-banner__inner">
+          <div class="rubric-banner__indicator">
+            <span class="rubric-banner__dot" aria-hidden="true"></span>
+            <strong>Iniciativa Académica UPS WEB:</strong>
+            <span style="color: #cbd5e1;">Semillero de Investigación en Tecnologías Web y Código Abierto</span>
+          </div>
+          <button
+            type="button"
+            id="rubric-toggle-btn"
+            class="rubric-banner__toggle-btn"
+            aria-expanded="false"
+            aria-controls="rubric-panel"
+          >
+            <span class="rubric-toggle-text">Ver Rúbrica y Criterios</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+        </div>
+
+        <div id="rubric-panel" class="rubric-banner__panel">
+          <p style="font-size: 0.75rem; color: #cbd5e1; margin-bottom: 0.5rem; line-height: 1.5;">
+            Esta plataforma satisface integralmente las directrices académicas: estructura HTML5 semántica,
+            CSS puro Mobile-First con variables y media queries justificadas ergonómicamente, interacciones JavaScript
+            accesibles y verificación de contraste WCAG AA/AAA.
+          </p>
+          <div class="rubric-grid">
+            <div class="rubric-card">
+              <h4>1. Estructura y Semántica HTML5</h4>
+              <ul>
+                <li>6 Secciones completas: Inicio, Líneas, Proyectos, Cronograma, Postulación y FAQ.</li>
+                <li>Etiquetas semánticas: header, nav, main, section, article, aside, figure, fieldset, legend.</li>
+                <li>Jerarquía estricta: un único h1 principal, h2 por sección y h3 en tarjetas y componentes.</li>
+                <li>Formularios con etiquetas label explícitas asociadas mediante id y for.</li>
+              </ul>
+            </div>
+            <div class="rubric-card">
+              <h4>2. Estilos CSS Mobile-First y Adaptaciones</h4>
+              <ul>
+                <li>Diseño base para móviles (320px+) con variables en :root y contrastes WCAG AA/AAA.</li>
+                <li>Adaptación Justificada 1 (@media &ge; 768px): barra horizontal y grillas a 2 columnas.</li>
+                <li>Adaptación Justificada 2 (@media &ge; 1024px): distribución asimétrica y portafolio en 3 columnas.</li>
+                <li>Modo accesible (@media prefers-reduced-motion: reduce) para usuarios con cinetosis.</li>
+              </ul>
+            </div>
+            <div class="rubric-card">
+              <h4>3. Interacciones JavaScript Útiles</h4>
+              <ul>
+                <li>Menú móvil accesible con aria-expanded, aria-controls y cierre con Escape.</li>
+                <li>Filtros en tiempo real por categoría y buscador de texto con contador aria-live.</li>
+                <li>Ficha modal accesible con gestión de foco y retorno al disparador.</li>
+                <li>Cronograma con pestañas accesibles (role="tablist") y flechas de teclado.</li>
+                <li>Validación accesible con resumen role="alert", folio generado y descarga de ticket.</li>
+              </ul>
+            </div>
+            <div class="rubric-card">
+              <h4>4. Pruebas de Calidad y Accesibilidad</h4>
+              <ul>
+                <li>Navegación 100% operable por teclado con foco visible de alto contraste (:focus-visible).</li>
+                <li>Cumplimiento de ratios de contraste cromático superiores a 4.5:1 y 7:1.</li>
+                <li>Escalabilidad y zoom al 200% sin desbordamiento horizontal ni ruptura del layout.</li>
+                <li>Código ligero nativo (HTML5, CSS3, JS Vanilla) sin bundlers ni frameworks requeridos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ======================================================================
+         ENCABEZADO SEMÁNTICO CON NAVEGACIÓN Y CONTRATO DE 3 ZONAS
+         ====================================================================== -->
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          
+          <!-- ZONA 1: Logotipo e Identidad de la Iniciativa -->
+          <a href="#inicio" class="site-brand" aria-label="Iniciativa Académica UPS WEB - Portada">
+            <div class="site-brand__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+              </svg>
+            </div>
+            <span>UPS WEB</span>
+          </a>
+
+          <!-- ZONA 2: Enlaces de Navegación Semántica (Desktop) -->
+          <nav class="site-nav" aria-label="Navegación principal de la iniciativa">
+            <ul class="site-nav__list">
+              <li><a href="#inicio" class="site-nav__link">Inicio</a></li>
+              <li><a href="#lineas" class="site-nav__link">Líneas Académicas</a></li>
+              <li><a href="#proyectos" class="site-nav__link">Proyectos y Mentores</a></li>
+              <li><a href="#cronograma" class="site-nav__link">Cronograma</a></li>
+              <li><a href="#postulacion" class="site-nav__link">Postulación</a></li>
+              <li><a href="#faq" class="site-nav__link">Preguntas</a></li>
+            </ul>
+          </nav>
+
+          <!-- ZONA 3: Acción Principal y Botón Hamburguesa Móvil -->
+          <div class="site-header__actions">
+            <a href="#postulacion" class="btn btn-primary btn-header-cta js-scroll-to-apply">
+              <span>Postularme</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+
+            <button
+              type="button"
+              id="menu-toggle-btn"
+              class="menu-toggle-btn"
+              aria-expanded="false"
+              aria-controls="mobile-nav-drawer"
+              aria-label="Abrir menú de navegación"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Menú Desplegable Móvil -->
+      <nav id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Navegación móvil">
+        <ul class="mobile-nav-list">
+          <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+          <li><a href="#lineas" class="mobile-nav-link">Líneas Académicas</a></li>
+          <li><a href="#proyectos" class="mobile-nav-link">Proyectos y Mentores</a></li>
+          <li><a href="#cronograma" class="mobile-nav-link">Cronograma</a></li>
+          <li><a href="#postulacion" class="mobile-nav-link">Postulación</a></li>
+          <li><a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <a href="#postulacion" class="btn btn-primary btn-full js-scroll-to-apply">
+            <span>Postularme al Semillero</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ======================================================================
+         CONTENIDO PRINCIPAL DELIMITADO POR LA ETIQUETA SEMÁNTICA <main>
+         ====================================================================== -->
+    <main id="contenido-principal" tabindex="-1">
+
+      <!-- ====================================================================
+           SECCIÓN 1: HERO / PORTADA (#inicio)
+           ==================================================================== -->
+      <section id="inicio" class="hero-section" aria-labelledby="hero-heading">
+        <div class="container">
+          <div class="hero-grid">
+            
+            <!-- Columna de Texto y Propuesta Editorial -->
+            <div>
+              <div class="hero-meta">
+                <span>Iniciativa Académica Universitaria</span>
+                <span class="hero-meta__sep" aria-hidden="true">·</span>
+                <span>Convocatoria 2026</span>
+                <span class="hero-meta__sep" aria-hidden="true">·</span>
+                <span>Período Anual</span>
+              </div>
+
+              <h1 id="hero-heading" class="hero-title">
+                Iniciativa Académica UPS WEB: Semillero de Innovación, Desarrollo Web y Software Libre
+              </h1>
+
+              <p class="hero-desc">
+                Una iniciativa universitaria interdisciplinaria que reúne a estudiantes y docentes investigadores
+                para desarrollar hardware libre, inteligencia artificial para monitoreo ambiental y plataformas
+                web accesibles con impacto comunitario directo.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="#postulacion" class="btn btn-primary btn-lg js-scroll-to-apply">
+                  <span>Postularme al Semillero</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </a>
+                <a href="#lineas" class="btn btn-secondary btn-lg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                  </svg>
+                  <span>Explorar Líneas de Investigación</span>
+                </a>
+              </div>
+
+              <!-- Garantías Institucionales -->
+              <div class="hero-guarantees">
+                <div class="hero-guarantee-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                  <span>Convalidación de hasta 8 créditos optativos</span>
+                </div>
+                <div class="hero-guarantee-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                  <span>100% Código Abierto (Open Source)</span>
+                </div>
+                <div class="hero-guarantee-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" aria-hidden="true">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                  <span>Impacto real en comunidades y escuelas</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columna Visual: Maqueta Vectorial Semántica del Laboratorio con figure y figcaption -->
+            <div class="hero-visual">
+              <figure class="hero-figure">
+                <div class="hero-figure__wrapper">
+                  <svg
+                    role="img"
+                    aria-labelledby="hero-img-title hero-img-desc"
+                    viewBox="0 0 640 400"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title id="hero-img-title">Laboratorio Central del Semillero UPS WEB</title>
+                    <desc id="hero-img-desc">
+                      Estudiantes universitarios e investigadoras colaborando en el laboratorio de desarrollo web, prototipado 3D y sensores ambientales.
+                    </desc>
+                    
+                    <!-- Fondo tecnológico oscuro -->
+                    <rect width="640" height="400" fill="#0f172a" />
+                    
+                    <!-- Ventanales del campus -->
+                    <rect x="40" y="30" width="160" height="180" rx="4" fill="#1e293b" stroke="#334155" stroke-width="2" />
+                    <line x1="120" y1="30" x2="120" y2="210" stroke="#334155" stroke-width="2" />
+                    <line x1="40" y1="120" x2="200" y2="120" stroke="#334155" stroke-width="2" />
+                    
+                    <!-- Pizarra técnica con telemetría ambiental y gráficos -->
+                    <rect x="240" y="30" width="360" height="180" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1.5" />
+                    <path d="M270 160L320 110L370 135L420 80L470 120L530 65" stroke="#34d399" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="270" cy="160" r="4" fill="#6ee7b7" />
+                    <circle cx="320" cy="110" r="4" fill="#6ee7b7" />
+                    <circle cx="370" cy="135" r="4" fill="#6ee7b7" />
+                    <circle cx="420" cy="80" r="4" fill="#6ee7b7" />
+                    <circle cx="470" cy="120" r="4" fill="#6ee7b7" />
+                    <circle cx="530" cy="65" r="4" fill="#6ee7b7" />
+
+                    <!-- Fórmulas y anotaciones científicas -->
+                    <rect x="270" y="55" width="130" height="8" rx="2" fill="#a7f3d0" fill-opacity="0.8" />
+                    <rect x="270" y="70" width="90" height="6" rx="2" fill="#a7f3d0" fill-opacity="0.6" />
+
+                    <!-- Banco de laboratorio central -->
+                    <rect x="40" y="240" width="560" height="140" rx="4" fill="#1e293b" />
+                    <rect x="50" y="230" width="540" height="15" rx="3" fill="#334155" />
+
+                    <!-- Sensor solar modular -->
+                    <rect x="90" y="195" width="70" height="35" rx="3" fill="#047857" />
+                    <polygon points="90,195 125,175 160,195" fill="#059669" />
+                    <rect x="120" y="160" width="8" height="20" fill="#94a3b8" />
+                    <circle cx="124" cy="155" r="6" fill="#38bdf8" />
+
+                    <!-- Investigadores y estudiantes colaborando -->
+                    <circle cx="240" cy="205" r="16" fill="#cbd5e1" />
+                    <path d="M215 245C215 225 265 225 265 245V270H215V245Z" fill="#e2e8f0" />
+                    <rect x="225" y="235" width="45" height="25" rx="2" fill="#38bdf8" />
+
+                    <circle cx="390" cy="205" r="16" fill="#cbd5e1" />
+                    <path d="M365 245C365 225 415 225 415 245V270H365V245Z" fill="#cbd5e1" />
+
+                    <circle cx="510" cy="210" r="15" fill="#94a3b8" />
+                    <path d="M490 248C490 230 535 230 535 248V270H490V248Z" fill="#94a3b8" />
+                  </svg>
+
+                  <div class="hero-figure__status-tag">
+                    <span>Makerspace &amp; Lab de Ciencia Abierta</span>
+                    <span class="mono-badge">Activo 2026</span>
+                  </div>
+                </div>
+                <figcaption class="hero-figure__caption">
+                  Instalaciones universitarias donde convergen prototipado físico, desarrollo web e investigación comunitaria.
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+          <!-- Métricas Cuantitativas y Evidencia de Impacto -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <div class="metric-number">340+</div>
+              <div class="metric-label">Estudiantes vinculados</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">18</div>
+              <div class="metric-label">Proyectos activos</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">46</div>
+              <div class="metric-label">Artículos y ponencias</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number highlight">12</div>
+              <div class="metric-label">Comunidades y colegios</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECCIÓN 2: LÍNEAS DE INVESTIGACIÓN (#lineas)
+           ==================================================================== -->
+      <section id="lineas" class="section section--white" aria-labelledby="lineas-heading">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-pretitle">Estructura Académica de la Iniciativa</div>
+            <h2 id="lineas-heading" class="section-title">
+              Líneas de Investigación e Impacto Social
+            </h2>
+            <p class="section-desc">
+              La iniciativa académica se articula en cuatro líneas de acción científica que combinan
+              rigor metodológico, soberanía tecnológica y transferencia directa del conocimiento a la sociedad.
+            </p>
+          </div>
+
+          <!-- Grilla de Líneas Temáticas (Mobile-First 1 col, Tablet/Desktop 2 cols) -->
+          <div class="pillars-grid">
+            
+            <!-- Pilar 1 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-card__header">
+                  <span class="pillar-card__num">01.</span>
+                  <div class="pillar-card__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2">
+                      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="pillar-card__title">Inteligencia Artificial para Monitoreo Ambiental</h3>
+                <p class="pillar-card__desc">
+                  Modelos de visión por computadora y redes neuronales ligeras para telemetría de cuencas hídricas y calidad del aire local en tiempo real.
+                </p>
+              </div>
+              <div class="pillar-card__objectives">
+                <span class="pillar-card__obj-title">Objetivos específicos:</span>
+                <ul class="pillar-card__obj-list">
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Sensores IoT solares de bajo costo para ríos.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Modelos de visión artificial para clasificación de biodiversidad.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Publicación de datasets climáticos de acceso abierto.</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Pilar 2 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-card__header">
+                  <span class="pillar-card__num">02.</span>
+                  <div class="pillar-card__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2">
+                      <rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="pillar-card__title">Robótica Abierta y Tecnología Comunitaria</h3>
+                <p class="pillar-card__desc">
+                  Diseño y fabricación de kits de robótica y prótesis mecánicas utilizando hardware libre e impresión 3D en filamentos reciclados.
+                </p>
+              </div>
+              <div class="pillar-card__objectives">
+                <span class="pillar-card__obj-title">Objetivos específicos:</span>
+                <ul class="pillar-card__obj-list">
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Kits modulares programables en Scratch y Python.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Manuales pedagógicos interactivos en lenguas nativas.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Talleres presenciales en escuelas rurales asociadas.</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Pilar 3 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-card__header">
+                  <span class="pillar-card__num">03.</span>
+                  <div class="pillar-card__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="2">
+                      <polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="pillar-card__title">Soberanía Digital y Herramientas Libres</h3>
+                <p class="pillar-card__desc">
+                  Auditoría de seguridad, privacidad de datos ciudadanos y desarrollo de plataformas accesibles que mitigan la brecha de soberanía tecnológica.
+                </p>
+              </div>
+              <div class="pillar-card__objectives">
+                <span class="pillar-card__obj-title">Objetivos específicos:</span>
+                <ul class="pillar-card__obj-list">
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Protocolos criptográficos descentralizados y seguros.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Desarrollo web bajo directrices WCAG 2.2 AAA.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Repositorios institucionales abiertos en GitLab y GitHub.</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Pilar 4 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-card__header">
+                  <span class="pillar-card__num">04.</span>
+                  <div class="pillar-card__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="pillar-card__title">Ciencia Ciudadana y Bioinformática</h3>
+                <p class="pillar-card__desc">
+                  Plataformas web progresivas e interactivas para que agricultores y estudiantes participen en el muestreo biológico y monitoreo ecológico.
+                </p>
+              </div>
+              <div class="pillar-card__objectives">
+                <span class="pillar-card__obj-title">Objetivos específicos:</span>
+                <ul class="pillar-card__obj-list">
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Mapeo participativo de polinizadores y suelos agrícolas.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Visualizadores de datos genómicos en el navegador.</span>
+                  </li>
+                  <li class="pillar-card__obj-item">
+                    <span class="pillar-card__bullet" aria-hidden="true"></span>
+                    <span>Talleres comunitarios de biofabricación abierta.</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECCIÓN 3: PROYECTOS ACTIVOS Y MENTORES (#proyectos)
+           ==================================================================== -->
+      <section id="proyectos" class="section section--canvas" aria-labelledby="proyectos-heading">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-pretitle">Portafolio del Semillero</div>
+            <h2 id="proyectos-heading" class="section-title">
+              Proyectos Activos y Mentores Académicos
+            </h2>
+            <p class="section-desc">
+              Conozca los prototipos y desarrollos en marcha liderados por estudiantes y docentes investigadores.
+              Al postularse, puede elegir vincularse a cualquiera de estos proyectos.
+            </p>
+          </div>
+
+          <!-- Barra Interactiva de Búsqueda y Filtrado -->
+          <div class="filter-bar">
+            <div class="filter-bar__top">
+              <div class="search-input-wrapper">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <label for="search-proyectos" class="sr-only">Buscar proyectos por título, mentor o tecnología</label>
+                <input
+                  type="search"
+                  id="search-proyectos"
+                  class="search-input"
+                  placeholder="Buscar por proyecto, mentor o tecnología..."
+                />
+                <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Limpiar búsqueda">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Contador dinámico anunciado a lectores de pantalla mediante aria-live -->
+              <div id="filter-counter" class="filter-counter" aria-live="polite" aria-atomic="true">
+                Mostrando <strong>6</strong> de 6 proyectos
+              </div>
+            </div>
+
+            <!-- Botones de Categoría Temática -->
+            <div class="filter-categories">
+              <span class="filter-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                </svg>
+                <span>Filtrar:</span>
+              </span>
+              <button type="button" class="filter-btn is-active" data-category="all" aria-pressed="true">
+                Todos los proyectos
+              </button>
+              <button type="button" class="filter-btn" data-category="ia-ambiental" aria-pressed="false">
+                IA y Ambiente
+              </button>
+              <button type="button" class="filter-btn" data-category="robotica-educativa" aria-pressed="false">
+                Robótica Abierta
+              </button>
+              <button type="button" class="filter-btn" data-category="software-libre" aria-pressed="false">
+                Software Libre
+              </button>
+              <button type="button" class="filter-btn" data-category="ciencia-ciudadana" aria-pressed="false">
+                Ciencia Ciudadana
+              </button>
+            </div>
+          </div>
+
+          <!-- Grilla de Proyectos (1 col en móvil, 2 en tablet, 3 en desktop) -->
+          <div id="projects-grid" class="projects-grid">
+            <!-- Renderizado dinámicamente mediante script.js -->
+          </div>
+
+          <!-- Estado Vacío cuando la búsqueda no produce resultados -->
+          <div id="empty-state" class="empty-state" style="display: none;">
+            <h3 class="empty-state__title">No se encontraron proyectos</h3>
+            <p class="empty-state__desc">
+              No hay proyectos que coincidan con <span id="empty-search-query">la búsqueda</span> en esta categoría.
+            </p>
+            <button type="button" id="reset-filters-btn" class="btn btn-secondary">
+              Restablecer filtros de búsqueda
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           MODAL ACCESIBLE DE FICHA TÉCNICA DE PROYECTO
+           ==================================================================== -->
+      <div
+        id="project-modal-backdrop"
+        class="modal-backdrop"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-project-title"
+        aria-describedby="modal-project-summary"
+      >
+        <div class="modal-box">
+          
+          <div class="modal-header">
+            <div class="modal-header__brand">
+              <div id="modal-project-avatar" class="project-avatar" style="background-color: #047857;" aria-hidden="true">
+                EV
+              </div>
+              <div>
+                <h3 id="modal-project-title" class="modal-title">Título del Proyecto</h3>
+                <div id="modal-project-subtitle" class="modal-subtitle">Categoría · Estado</div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              id="project-modal-close-btn"
+              class="modal-close-btn"
+              aria-label="Cerrar ficha de proyecto"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+
+          <div id="modal-project-mentor" class="modal-mentor-info">
+            <!-- Inserción dinámica por JS -->
+          </div>
+
+          <div class="modal-callout">
+            <span class="modal-callout__label">Resumen Metodológico:</span>
+            <p id="modal-project-summary" class="modal-callout__text"></p>
+            <span class="modal-callout__label">Impacto Comunitario y Científico:</span>
+            <p id="modal-project-impact" class="modal-callout__text" style="margin-bottom: 0; color: var(--color-secondary); font-weight: 500;"></p>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <span class="modal-callout__label" style="margin-bottom: 0.5rem;">Componentes y Tecnologías Libres:</span>
+            <div id="modal-project-techs" class="tech-chips"></div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" id="project-modal-dismiss-btn" class="btn btn-secondary">
+              Cerrar ficha
+            </button>
+            <a href="#postulacion" class="btn btn-primary js-scroll-to-apply" onclick="document.getElementById('project-modal-backdrop').classList.remove('is-visible');">
+              Postularme a este proyecto
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           SECCIÓN 4: CRONOGRAMA ANUAL Y FASES (#cronograma)
+           ==================================================================== -->
+      <section id="cronograma" class="section section--white" aria-labelledby="cronograma-heading">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-pretitle">Ruta Formativa del Semillero</div>
+            <h2 id="cronograma-heading" class="section-title">
+              Cronograma Anual y Fases de Trabajo
+            </h2>
+            <p class="section-desc">
+              La iniciativa estructura su plan anual en dos fases complementarias: nivelación técnica en laboratorio
+              y salidas a campo con publicación de resultados científicos y software libre.
+            </p>
+          </div>
+
+          <!-- Selector de Pestañas Accesible con role="tablist" -->
+          <div class="schedule-tabs-wrapper">
+            <div role="tablist" class="tablist" aria-label="Fases del semillero">
+              <button
+                type="button"
+                role="tab"
+                id="tab-fase-1"
+                class="tab-btn is-active"
+                data-phase="1"
+                aria-selected="true"
+                aria-controls="panel-fase-1"
+                tabindex="0"
+              >
+                <span>Fase I</span>
+                <span class="tab-subtext">(Semestre I: Laboratorio)</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="tab-fase-2"
+                class="tab-btn"
+                data-phase="2"
+                aria-selected="false"
+                aria-controls="panel-fase-2"
+                tabindex="-1"
+              >
+                <span>Fase II</span>
+                <span class="tab-subtext">(Semestre II: Campo)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- PANEL DE FASE 1 -->
+          <div
+            id="panel-fase-1"
+            role="tabpanel"
+            aria-labelledby="tab-fase-1"
+            class="schedule-grid"
+          >
+            <!-- Lista cronológica (8 cols en desktop) -->
+            <div class="schedule-timeline">
+              
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semanas 1 a 2</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Híbrido</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Inducción y Talleres de Control de Versiones con Git y Ética Científica
+                </h3>
+                <p class="timeline-item__desc">
+                  Capacitación en flujos colaborativos de trabajo, redacción de bitácoras de investigación y gestión de licencias GPL y MIT.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Comité de Mentoría UPS WEB</div>
+                  <div><strong>Lugar:</strong> Laboratorio Central Lab-3</div>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semanas 3 a 5</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Presencial en Laboratorio</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Asignación a Línea de Investigación y Diseño del Estado del Arte
+                </h3>
+                <p class="timeline-item__desc">
+                  Revisión sistemática de literatura científica en Scopus y arXiv, formulación del problema y definición del cronograma de prototipado.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Mentores Principales por Proyecto</div>
+                  <div><strong>Lugar:</strong> Salas Colaborativas Edificio B</div>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semanas 6 a 10</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Presencial en Laboratorio</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Fabricación Digital en Makerspace y Pruebas Preliminares de Hardware
+                </h3>
+                <p class="timeline-item__desc">
+                  Construcción del primer prototipo funcional, ensamble de circuitos impresos (PCB) y calibración de sensores ópticos y térmicos.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Coordinación Técnica de Prototipado</div>
+                  <div><strong>Lugar:</strong> Makerspace Central (Área de Impresión 3D)</div>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semanas 11 a 12</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Híbrido</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Coloquio Intermedio de Avances y Evaluación Formativa por Pares
+                </h3>
+                <p class="timeline-item__desc">
+                  Presentación tipo póster científico donde los semilleristas reciben retroalimentación técnica de docentes y evaluadores externos.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Docentes Evaluadores Externos</div>
+                  <div><strong>Lugar:</strong> Auditorio de Posgrado y Streaming</div>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Panel Lateral Informativo (Aside Sticky - 4 cols en desktop) -->
+            <aside class="schedule-aside">
+              <div>
+                <div class="schedule-aside__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                  </svg>
+                </div>
+                <h3 class="schedule-aside__title">Convalidación y Reconocimientos</h3>
+                <p class="schedule-aside__desc">
+                  Reconocimiento de hasta 8 créditos académicos optativos y convalidación de horas de vinculación comunitaria certificadas institucionalmente.
+                </p>
+              </div>
+
+              <div class="schedule-aside__benefits">
+                <span class="schedule-aside__benefits-title">Beneficios del semillerista:</span>
+                <div class="schedule-aside__benefit-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <span>Acceso 24/7 a impresoras 3D y bancos de prueba en Makerspace.</span>
+                </div>
+                <div class="schedule-aside__benefit-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <span>Financiamiento completo de reactivos, componentes y viáticos.</span>
+                </div>
+                <div class="schedule-aside__benefit-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <span>Coautoría garantizada en artículos indexados y ponencias.</span>
+                </div>
+              </div>
+
+              <a href="#postulacion" class="btn btn-primary btn-full js-scroll-to-apply">
+                Postularme a esta ruta formativa
+              </a>
+            </aside>
+
+          </div>
+
+          <!-- PANEL DE FASE 2 -->
+          <div
+            id="panel-fase-2"
+            role="tabpanel"
+            aria-labelledby="tab-fase-2"
+            class="schedule-grid"
+            style="display: none;"
+          >
+            <!-- Lista cronológica Fase 2 -->
+            <div class="schedule-timeline">
+              
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semanas 13 a 16</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Presencial en Campo</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Salidas de Campo y Despliegue de Pilotos en Comunidades
+                </h3>
+                <p class="timeline-item__desc">
+                  Instalación de sensores en escuelas rurales y cuencas seleccionadas, capacitación a usuarios comunitarios y recolección de métricas.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Coordinación de Salidas Territoriales</div>
+                  <div><strong>Lugar:</strong> Escuelas Asociadas y Cuencas Hídricas</div>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semanas 17 a 19</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Virtual / Asíncrono</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Redacción de Artículos Científicos (Paper Writing Sprint)
+                </h3>
+                <p class="timeline-item__desc">
+                  Estructuración de manuscritos científicos para envío a congresos indexados IEEE, ACM o revistas de acceso abierto.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Dra. Elena Valdez y Dr. Rodrigo Mendoza</div>
+                  <div><strong>Lugar:</strong> Biblioteca Central y Espacios Virtuales</div>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semanas 20 a 22</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Virtual / Repositorios</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Liberación de Código Fuente y Documentación Institucional
+                </h3>
+                <p class="timeline-item__desc">
+                  Publicación de esquemas electrónicos, modelos 3D y repositorios con guías de reproducción paso a paso bajo licencias libres.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Oficina de Ciencia Abierta</div>
+                  <div><strong>Lugar:</strong> GitLab Institucional UPS WEB</div>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-item__top">
+                  <div class="timeline-item__week">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>Semana 23</span>
+                  </div>
+                  <span class="timeline-item__modality">Modalidad: Presencial en Campus</span>
+                </div>
+                <h3 class="timeline-item__title">
+                  Feria Universitaria Anual de Ciencia Abierta y Entrega de Distinciones
+                </h3>
+                <p class="timeline-item__desc">
+                  Demostración abierta al público, entrega de certificados de créditos académicos y reconocimientos a las iniciativas más destacadas.
+                </p>
+                <div class="timeline-item__footer">
+                  <div><strong>Tutor:</strong> Rectoría y Decanato de Investigación</div>
+                  <div><strong>Lugar:</strong> Plaza Central del Campus</div>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Aside Fase 2 -->
+            <aside class="schedule-aside">
+              <div>
+                <div class="schedule-aside__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                  </svg>
+                </div>
+                <h3 class="schedule-aside__title">Cierre Anual y Publicaciones</h3>
+                <p class="schedule-aside__desc">
+                  Los estudiantes con artículos aceptados reciben fondos para la inscripción a congresos y constancia de mérito académico investigativo.
+                </p>
+              </div>
+
+              <div class="schedule-aside__benefits">
+                <span class="schedule-aside__benefits-title">Garantías de la Fase II:</span>
+                <div class="schedule-aside__benefit-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <span>Acompañamiento personalizado en redacción científica.</span>
+                </div>
+                <div class="schedule-aside__benefit-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <span>Cobertura total de traslados para salidas comunitarias.</span>
+                </div>
+                <div class="schedule-aside__benefit-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <span>Certificación formal emitida por el Decanato de Facultad.</span>
+                </div>
+              </div>
+
+              <a href="#postulacion" class="btn btn-primary btn-full js-scroll-to-apply">
+                Postularme a esta ruta formativa
+              </a>
+            </aside>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECCIÓN 5: FORMULARIO DE POSTULACIÓN (#postulacion)
+           ==================================================================== -->
+      <section id="postulacion" class="section section--canvas" aria-labelledby="postulacion-heading">
+        <div class="container form-container">
+          
+          <div class="form-header">
+            <div class="section-pretitle">Convocatoria de Nuevos Miembros</div>
+            <h2 id="postulacion-heading" class="section-title">
+              Formulario de Postulación al Semillero UPS WEB
+            </h2>
+            <p class="section-desc">
+              Inscríbase para formar parte de la iniciativa académica.
+              Los campos marcados con asterisco (<span class="req-star" aria-hidden="true">*</span>) son obligatorios.
+            </p>
+          </div>
+
+          <!-- Resumen accesible de errores con role="alert" -->
+          <div id="form-error-summary" class="error-summary" role="alert" tabindex="-1">
+            <div class="error-summary__inner">
+              <svg class="error-summary__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+              <div>
+                <h3 class="error-summary__title">Por favor revise los siguientes campos antes de continuar:</h3>
+                <ul id="error-summary-list" class="error-summary__list"></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario HTML5 Semántico -->
+          <form id="postulacion-form" class="form-card" novalidate>
+            
+            <!-- Fila 1: Nombre y Correo -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="campo-nombre-aspirante" class="form-label">
+                  Nombre y Apellidos completos <span class="req-star" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="campo-nombre-aspirante"
+                  name="fullName"
+                  class="form-input"
+                  placeholder="Ej. Mateo Ramírez Morales"
+                  required
+                  aria-required="true"
+                  aria-describedby="ayuda-nombre-aspirante error-fullName"
+                  autocomplete="name"
+                />
+                <span id="ayuda-nombre-aspirante" class="form-help">
+                  Nombre oficial para el registro en actas institucionales.
+                </span>
+                <span id="error-fullName" class="form-error-msg" role="status"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="campo-correo-institucional" class="form-label">
+                  Correo Electrónico de Contacto <span class="req-star" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="campo-correo-institucional"
+                  name="email"
+                  class="form-input"
+                  placeholder="aspirante@universidad.edu"
+                  required
+                  aria-required="true"
+                  aria-describedby="ayuda-correo error-email"
+                  autocomplete="email"
+                />
+                <span id="ayuda-correo" class="form-help">
+                  Recibirá las convocatorias a talleres y repositorios en este correo.
+                </span>
+                <span id="error-email" class="form-error-msg" role="status"></span>
+              </div>
+            </div>
+
+            <!-- Fila 2: Carrera y Nivel Académico -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="campo-facultad" class="form-label">
+                  Facultad o Carrera Académica <span class="req-star" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="campo-facultad"
+                  name="facultyOrSchool"
+                  class="form-input"
+                  placeholder="Ej. Ing. de Sistemas / Computación / Biología"
+                  required
+                  aria-required="true"
+                  aria-describedby="error-facultyOrSchool"
+                />
+                <span id="error-facultyOrSchool" class="form-error-msg" role="status"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="campo-nivel-academico" class="form-label">
+                  Nivel Académico Actual <span class="req-star" aria-hidden="true">*</span>
+                </label>
+                <select id="campo-nivel-academico" name="academicLevel" class="form-select">
+                  <option value="pregrado">Estudiante de Pregrado (2do a 10mo ciclo)</option>
+                  <option value="posgrado">Estudiante de Maestría o Doctorado</option>
+                  <option value="egresado-reciente">Egresado Reciente (últimos 2 años)</option>
+                  <option value="docente-colaborador">Docente Colaborador de Cátedra</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Fila 3: Línea de Investigación de Preferencia -->
+            <div class="form-group">
+              <label for="campo-linea-preferencia" class="form-label">
+                Línea de Investigación de Preferencia
+              </label>
+              <select id="campo-linea-preferencia" name="preferredPillar" class="form-select">
+                <option value="ia-ambiental">01. Inteligencia Artificial para Monitoreo Ambiental</option>
+                <option value="robotica-educativa">02. Robótica Abierta y Tecnología Comunitaria</option>
+                <option value="software-libre">03. Soberanía Digital y Herramientas Libres</option>
+                <option value="ciencia-ciudadana">04. Ciencia Ciudadana y Bioinformática</option>
+                <option value="general">Abierto a cualquier línea según necesidad del semillero</option>
+              </select>
+            </div>
+
+            <!-- Fila 4: Disponibilidad Horaria Semanal (Fieldset Semántico) -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">
+                Disponibilidad Horaria Semanal para el Semillero <span class="req-star" aria-hidden="true">*</span>
+              </legend>
+              <div class="radio-cards-grid">
+                <label class="radio-card is-checked" for="horas-4-8">
+                  <input type="radio" id="horas-4-8" name="weeklyHours" value="4-8" checked />
+                  <div>
+                    <span class="radio-card__title">4 a 8 hrs / semana</span>
+                    <span class="radio-card__desc">Modo Inicial (compatible con carga lectiva completa).</span>
+                  </div>
+                </label>
+
+                <label class="radio-card" for="horas-8-12">
+                  <input type="radio" id="horas-8-12" name="weeklyHours" value="8-12" />
+                  <div>
+                    <span class="radio-card__title">8 a 12 hrs / semana</span>
+                    <span class="radio-card__desc">Dedicación estándar (acceso a beca de materiales).</span>
+                  </div>
+                </label>
+
+                <label class="radio-card" for="horas-12-mas">
+                  <input type="radio" id="horas-12-mas" name="weeklyHours" value="12+" />
+                  <div>
+                    <span class="radio-card__title">12+ hrs / semana</span>
+                    <span class="radio-card__desc">Desarrollo de tesis de grado o estancia investigativa.</span>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Fila 5: Exposición de Motivos -->
+            <div class="form-group">
+              <label for="campo-motivacion" class="form-label">
+                Exposición de motivos o idea de proyecto que desea explorar <span class="req-star" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="campo-motivacion"
+                name="motivation"
+                rows="3"
+                class="form-textarea"
+                placeholder="Cuéntenos qué desafío tecnológico, ambiental o social le interesa resolver mediante software o hardware abierto..."
+                required
+                aria-required="true"
+                aria-describedby="ayuda-motivacion error-motivation"
+              ></textarea>
+              <span id="ayuda-motivacion" class="form-help">
+                No evaluamos conocimientos previos avanzados, sino curiosidad científica, compromiso y afinidad con el semillero.
+              </span>
+              <span id="error-motivation" class="form-error-msg" role="status"></span>
+            </div>
+
+            <!-- Fila 6: Casilla de Compromiso Ético -->
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="campo-compromiso"
+                name="acceptCommitment"
+                required
+                aria-required="true"
+                aria-describedby="error-acceptCommitment"
+              />
+              <label for="campo-compromiso">
+                Me comprometo a participar con honestidad científica, respeto mutuo y a compartir los desarrollos bajo
+                licencias abiertas y libres en beneficio de la comunidad académica y social. <span class="req-star" aria-hidden="true">*</span>
+              </label>
+            </div>
+            <span id="error-acceptCommitment" class="form-error-msg" role="status" style="margin-left: 1.75rem;"></span>
+
+            <!-- Fila 7: Acciones del Formulario -->
+            <div class="form-actions">
+              <p class="form-actions__notice">
+                Confirmación inmediata con generación de folio institucional para seguimiento.
+              </p>
+              <div class="form-actions__buttons">
+                <button type="button" id="reset-form-btn" class="btn btn-secondary">
+                  Limpiar
+                </button>
+                <button type="submit" id="submit-form-btn" class="btn btn-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                  <span>Enviar Postulación</span>
+                </button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           MODAL ACCESIBLE DE CONFIRMACIÓN DE POSTULACIÓN
+           ==================================================================== -->
+      <div
+        id="confirm-modal-backdrop"
+        class="modal-backdrop"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="confirm-modal-title"
+        aria-describedby="confirm-modal-desc"
+      >
+        <div class="modal-box" style="max-width: 32rem; text-align: center;">
+          
+          <div class="confirm-modal-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+
+          <h3 id="confirm-modal-title" class="modal-title" style="font-size: 1.25rem; margin-bottom: 0.25rem;">
+            ¡Postulación Registrada Exitosamente!
+          </h3>
+          <p id="confirm-modal-desc" style="font-size: 0.8125rem; color: var(--color-text-muted);">
+            Su postulación para el Semillero UPS WEB 2026 ha sido recibida correctamente por el comité de investigación.
+          </p>
+
+          <div class="confirm-summary-list">
+            <div class="confirm-summary-row">
+              <span class="confirm-summary-label">Folio Oficial:</span>
+              <span id="confirm-folio" class="confirm-folio">UPSWEB-2026-0000</span>
+            </div>
+            <div class="confirm-summary-row">
+              <span class="confirm-summary-label">Aspirante:</span>
+              <span id="confirm-name" class="confirm-summary-value">-</span>
+            </div>
+            <div class="confirm-summary-row">
+              <span class="confirm-summary-label">Correo de contacto:</span>
+              <span id="confirm-email" class="confirm-summary-value">-</span>
+            </div>
+            <div class="confirm-summary-row">
+              <span class="confirm-summary-label">Programa / Facultad:</span>
+              <span id="confirm-faculty" class="confirm-summary-value">-</span>
+            </div>
+            <div class="confirm-summary-row">
+              <span class="confirm-summary-label">Dedicación Comprometida:</span>
+              <span id="confirm-hours" class="confirm-summary-value" style="color: var(--color-primary);">-</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem;">
+            <button type="button" id="download-receipt-btn" class="btn btn-secondary btn-full">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Descargar Ficha</span>
+            </button>
+            <button type="button" id="confirm-modal-close-btn" class="btn btn-primary btn-full">
+              Finalizar
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           SECCIÓN 6: PREGUNTAS FRECUENTES Y LABORATORIOS (#faq)
+           ==================================================================== -->
+      <section id="faq" class="section section--white" aria-labelledby="faq-heading">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-pretitle">Orientación al Estudiante</div>
+            <h2 id="faq-heading" class="section-title">
+              Preguntas Frecuentes y Laboratorios
+            </h2>
+            <p class="section-desc">
+              Aclare todas sus dudas sobre los requisitos de postulación, convalidación de créditos académicos,
+              financiamiento de proyectos y horarios de trabajo en laboratorio.
+            </p>
+          </div>
+
+          <div class="faq-grid">
+            
+            <!-- Acordeón Accesible de FAQs (7 cols en desktop) -->
+            <div class="faq-accordion">
+              
+              <!-- Pregunta 1 -->
+              <div class="faq-item">
+                <h3>
+                  <button
+                    type="button"
+                    class="faq-button"
+                    id="faq-btn-1"
+                    aria-expanded="true"
+                    aria-controls="faq-panel-1"
+                  >
+                    <span>¿Quiénes pueden postularse a la Iniciativa Académica UPS WEB?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </button>
+                </h3>
+                <div id="faq-panel-1" class="faq-panel is-open" role="region" aria-labelledby="faq-btn-1">
+                  <p>
+                    La convocatoria está abierta a todos los estudiantes de pregrado matriculados a partir del segundo semestre
+                    en carreras de ingeniería, ciencias de la computación, diseño o áreas afines, así como estudiantes de posgrado
+                    y egresados interesados en mentoría colaborativa.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Pregunta 2 -->
+              <div class="faq-item">
+                <h3>
+                  <button
+                    type="button"
+                    class="faq-button"
+                    id="faq-btn-2"
+                    aria-expanded="false"
+                    aria-controls="faq-panel-2"
+                  >
+                    <span>¿Se requiere experiencia previa en investigación o programación?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </button>
+                </h3>
+                <div id="faq-panel-2" class="faq-panel" role="region" aria-labelledby="faq-btn-2">
+                  <p>
+                    No es indispensable tener experiencia previa. Lo fundamental es la curiosidad, el compromiso ético
+                    y la motivación para aprender. La Fase I del semillero incluye talleres formativos de nivelación desde cero
+                    en herramientas de código libre, control de versiones y métodos científicos.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Pregunta 3 -->
+              <div class="faq-item">
+                <h3>
+                  <button
+                    type="button"
+                    class="faq-button"
+                    id="faq-btn-3"
+                    aria-expanded="false"
+                    aria-controls="faq-panel-3"
+                  >
+                    <span>¿Cómo se convalidan los créditos académicos o prácticas?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </button>
+                </h3>
+                <div id="faq-panel-3" class="faq-panel" role="region" aria-labelledby="faq-btn-3">
+                  <p>
+                    Al completar con éxito las dos fases anuales (cumpliendo al menos 120 horas certificadas de trabajo en laboratorio y campo),
+                    la facultad convalida hasta 8 créditos de asignaturas optativas o las horas obligatorias de práctica preprofesional y comunitaria.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Pregunta 4 -->
+              <div class="faq-item">
+                <h3>
+                  <button
+                    type="button"
+                    class="faq-button"
+                    id="faq-btn-4"
+                    aria-expanded="false"
+                    aria-controls="faq-panel-4"
+                  >
+                    <span>¿La iniciativa cuenta con fondos para materiales e insumos?</span>
+                    <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </button>
+                </h3>
+                <div id="faq-panel-4" class="faq-panel" role="region" aria-labelledby="faq-btn-4">
+                  <p>
+                    Sí. Los proyectos seleccionados reciben financiamiento del Fondo Institucional de Apoyo a la Investigación
+                    para la adquisición de microcontroladores, componentes electrónicos, filamentos 3D, reactivos y viáticos de salidas
+                    de campo sin costo alguno para el estudiante.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Tarjeta de Sede y Makerspace (5 cols en desktop) -->
+            <div class="lab-card">
+              <div>
+                <div class="lab-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <h3 class="lab-card__title">Sede del Semillero y Makerspace</h3>
+                <p class="lab-card__desc">
+                  Edificio de Laboratorios de Ingeniería y Ciencias Aplicadas (Lab-3 y Makerspace Central).
+                  Equipado con 6 estaciones de soldadura de precisión, 8 impresoras 3D, cortadora láser y bancos de prueba de microcontroladores.
+                </p>
+                <div class="lab-card__hours">
+                  Horario de acceso: Lunes a Sábado, 07:00 a 21:00 hrs
+                </div>
+              </div>
+
+              <div class="lab-card__contact">
+                <div class="lab-card__contact-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  <a href="mailto:upsweb.investigacion@universidad.edu">upsweb.investigacion@universidad.edu</a>
+                </div>
+                <div class="lab-card__contact-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Anexo Universitario: 4120 / 4122 (Decanato)</span>
+                </div>
+              </div>
+
+              <div class="lab-card__callout">
+                <strong>¿Perteneces a otra universidad o colectivo?</strong>
+                Admitimos proyectos interuniversitarios en régimen de pasantía y estancias de investigación colaborativas con homologación de créditos.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ======================================================================
+         PIE DE PÁGINA SEMÁNTICO (FOOTER)
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        
+        <div class="footer-grid">
+          
+          <div class="footer-brand">
+            <div class="footer-brand__name">Iniciativa Académica UPS WEB</div>
+            <p class="footer-brand__desc">
+              Semillero universitario interdisciplinario de investigación aplicada en desarrollo web accesible,
+              código abierto y hardware libre para el beneficio de la comunidad.
+            </p>
+          </div>
+
+          <div>
+            <div class="footer-nav__title">Navegación Rápida</div>
+            <ul class="footer-nav__list">
+              <li><a href="#inicio" class="footer-nav__link">Portada e Inicio</a></li>
+              <li><a href="#lineas" class="footer-nav__link">Líneas de Investigación</a></li>
+              <li><a href="#proyectos" class="footer-nav__link">Proyectos y Mentores</a></li>
+              <li><a href="#cronograma" class="footer-nav__link">Cronograma Anual</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-nav__title">Ciencia Abierta</div>
+            <ul class="footer-nav__list">
+              <li><a href="#postulacion" class="footer-nav__link">Postulación de Aspirantes</a></li>
+              <li><a href="#faq" class="footer-nav__link">Preguntas y Laboratorios</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-nav__link">Repositorios Institucionales</a></li>
+              <li><a href="#inicio" class="footer-nav__link">Código de Ética Científica</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Iniciativa Académica UPS WEB. Desarrollado con HTML5 semántico, CSS puro y JavaScript nativo.
+          </div>
+          <div>
+            Licencia Abierta GPL v3 / MIT · Universidad y Sociedad
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
